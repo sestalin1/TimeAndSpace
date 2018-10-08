@@ -10,13 +10,11 @@ namespace Tiempo_y_Espacio
     class Program
     {
         static void Main(string[] args)
+
         {
-            int year;
+            TimeAndSpace timeSpace = new TimeAndSpace();
+            timeSpace.Manager();
 
-            Console.WriteLine("Ingrese año");
-            year = int.Parse(Console.ReadLine());
-
-            TimeAndSpace.LeapYear(year);
         }
     }
 }
